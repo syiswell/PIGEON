@@ -282,6 +282,7 @@ def validate(model, val_loader, cfg, train_global_step, mode='dev', model_saver=
         flag = 1
     if mode == "test" and falg == 1:
         best_f1 = total_f1
+        flag = 0
         # if model_saver != None:
         #     model_saver.save(step=0, model=model)
             # model_saver.save(step=train_global_step, model=model)
